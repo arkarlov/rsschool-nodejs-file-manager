@@ -1,0 +1,13 @@
+{
+  "name": "rsschool-nodejs-file-manager",
+  "version": "0.0.1",
+  "description": "RSSchool NodeJS 2024 Q3",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
