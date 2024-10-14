@@ -4,3 +4,4 @@ export * from "./help.js";
 export * from "./osInfo.js";
 export * from "./hash.js";
 export * from "./files.js";
+export * from "./compress.js";

@@ -11,6 +11,8 @@ export const COMMAND = {
   copyFile: "cp",
   moveFile: "mv",
   removeFile: "rm",
+  zip: "compress",
+  unzip: "decompress",
 };
 
 export const OS_CMD_OPTION = {

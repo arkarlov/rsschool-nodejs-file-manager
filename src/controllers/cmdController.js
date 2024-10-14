@@ -2,8 +2,10 @@ import { COMMAND } from "../config/index.js";
 import {
   calculateHash,
   changeDir,
+  compress,
   copyFile,
   createFile,
+  decompress,
   help,
   listDir,
   moveFile,
@@ -30,9 +32,11 @@ export async function cmdController({ command, options, args }) {
       case COMMAND.listDir:
         await listDir();
         break;
+
       case COMMAND.osInfo:
         osInfo(options?.[0]);
         break;
+
       case COMMAND.hashFile:
         await calculateHash(args?.[0]);
         break;
@@ -54,6 +58,13 @@ export async function cmdController({ command, options, args }) {
         break;
       case COMMAND.removeFile:
         await removeFile(args?.[0]);
+        break;
+
+      case COMMAND.zip:
+        await compress(...args);
+        break;
+      case COMMAND.unzip:
+        await decompress(...args);
         break;
 
       default:

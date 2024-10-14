@@ -25,6 +25,10 @@ Available commands:
 
   Hash calculation
     hash path_to_file             Calculate hash for file and print it into console
+
+  Compress and decompress operations
+    compress path_to_file path_to_destination     Compress file
+    decompress path_to_file path_to_destination   Decompress file
 `;
 
   console.log(helpText);
