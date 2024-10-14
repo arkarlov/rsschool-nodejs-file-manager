@@ -5,6 +5,12 @@ export const COMMAND = {
   changeDir: "cd",
   listDir: "ls",
   hashFile: "hash",
+  cat: "cat",
+  createFile: "add",
+  renameFile: "rn",
+  copyFile: "cp",
+  moveFile: "mv",
+  removeFile: "rm",
 };
 
 export const OS_CMD_OPTION = {
