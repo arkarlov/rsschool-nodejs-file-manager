@@ -1,5 +1,5 @@
 import { parseArgs } from "node:util";
-import { args } from "../config/args.js";
+import { args } from "../config/index.js";
 
 export const login = () => {
   try {

@@ -1,6 +1,7 @@
-import { login } from "./modules/login.js";
+import { login } from "./modules/index.js";
+import { cliController } from "./controllers/index.js";
 
-export const app = () => {
+export function app() {
   const username = login();
 
   if (!username) {
@@ -11,4 +12,7 @@ export const app = () => {
   }
 
   console.log(`Welcome to the File Manager, ${username}!`);
-};
+  console.log(`\nTo display information, use the "help" command.`);
+
+  cliController(username);
+}
