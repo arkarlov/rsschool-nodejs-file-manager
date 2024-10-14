@@ -1,5 +1,12 @@
 import { COMMAND } from "../config/index.js";
-import { changeDir, help, listDir, osInfo, upDir } from "../modules/index.js";
+import {
+  calculateHash,
+  changeDir,
+  help,
+  listDir,
+  osInfo,
+  upDir,
+} from "../modules/index.js";
 
 export async function cmdController({ command, options, args }) {
   try {
@@ -18,6 +25,9 @@ export async function cmdController({ command, options, args }) {
         break;
       case COMMAND.osInfo:
         osInfo(options?.[0]);
+        break;
+      case COMMAND.hashFile:
+        await calculateHash(args?.[0]);
         break;
 
       default:

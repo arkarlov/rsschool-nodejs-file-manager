@@ -4,6 +4,7 @@ export const COMMAND = {
   upDir: "up",
   changeDir: "cd",
   listDir: "ls",
+  hashFile: "hash",
 };
 
 export const OS_CMD_OPTION = {
