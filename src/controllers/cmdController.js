@@ -72,7 +72,7 @@ export async function cmdController({ command, options, args }) {
         break;
     }
   } catch (error) {
-    console.error(error); // TODO: remove
+    // console.error(error); // TODO: remove
     console.log("Operation failed");
   }
 }
