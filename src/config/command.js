@@ -13,6 +13,7 @@ export const COMMAND = {
   removeFile: "rm",
   zip: "compress",
   unzip: "decompress",
+  osInfo: "os",
 };
 
 export const OS_CMD_OPTION = {
